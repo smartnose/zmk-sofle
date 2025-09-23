@@ -54,27 +54,39 @@
 
         layer0 {
             bindings = <
-&kp EQUAL   &kp N1     &kp N2                    &kp N3      &kp N4       &kp N5                        &kp UP_ARROW     &mt RIGHT_ALT KP_NUMBER_6  &mt RIGHT_COMMAND KP_N7  &mt RS(RIGHT_COMMAND) KP_N8  &kp N9                   &kp N0      &kp MINUS
-&kp TAB     &kp Q      &kp W                     &kp E       &kp R        &kp T                         &kp DOWN_ARROW   &kp Y                      &kp U                    &kp I                        &kp O                    &kp P       &kp BSLH
-&kp CAPS    &kp A      &kp S                     &kp D       &kp F        &kp G                         &kp LEFT_ARROW   &kp H                      &kp J                    &kp K                        &kp L                    &kp SEMI    &kp APOS
-&kp LSHFT   &kp Z      &kp X                     &kp C       &kp V        &kp B                         &kp RIGHT_ARROW  &kp N                      &kp M                    &kp COMMA                    &kp DOT                  &kp FSLH    &lt 2 LC(TAB)
-&kp C_MUTE  &kp LCTRL  &mt LEFT_SHIFT AMPERSAND  &lt 1 HASH  &lt 3 SPACE  &mt LEFT_CONTROL BACKSPACE    &kp C_MUTE       &mt RIGHT_CONTROL TAB      &kp ENTER                &lt 1 PERCENT                &mt RIGHT_SHIFT PAGE_UP  &kp DELETE
+&kp EQUAL        &kp N1      &kp N2                    &kp N3      &kp N4       &kp N5                        &kp UP_ARROW     &mt RIGHT_ALT KP_NUMBER_6  &mt RIGHT_COMMAND KP_N7  &mt RS(RIGHT_COMMAND) KP_N8  &kp N9                   &kp N0      &kp MINUS
+&kp CAPSLOCK     &kp Q       &kp W                     &kp E       &kp R        &kp T                         &kp DOWN_ARROW   &kp Y                      &kp U                    &kp I                        &kp O                    &kp P       &kp BSLH
+&kp AT_SIGN      &kp A       &kp S                     &kp D       &kp F        &kp G                         &kp LEFT_ARROW   &kp H                      &kp J                    &kp K                        &kp L                    &kp SEMI    &kp APOS
+&kp LS(LC(TAB))  &kp Z       &kp X                     &kp C       &kp V        &kp B                         &kp RIGHT_ARROW  &kp N                      &kp M                    &kp COMMA                    &kp DOT                  &kp FSLH    &lt 3 LC(TAB)
+&kp C_MUTE       &kp ESCAPE  &mt LEFT_SHIFT AMPERSAND  &lt 1 HASH  &lt 2 SPACE  &mt LEFT_CONTROL BACKSPACE    &kp C_MUTE       &mt RIGHT_CONTROL TAB      &kp ENTER                &lt 1 PERCENT                &mt RIGHT_SHIFT PAGE_UP  &kp DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "LAYER0";
         };
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp LA(GRAVE)  &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+&kp GRAVE      &kp EXCLAMATION  &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp LESS_THAN     &kp GREATER_THAN
+&trans         &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans         &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
+&kp C_MUTE     &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
             display-name = "layer1";
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans       &trans  &trans          &trans           &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans          &trans           &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PERCENT  &trans  &trans          &trans           &kp TILDE    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans          &trans           &trans       &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            display-name = "layer3";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -88,19 +100,6 @@
             >;
 
             display-name = "layer2";
-            sensor-bindings = <&scroll_encoder>;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans       &trans  &trans          &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans          &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PERCENT  &trans  &trans          &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans          &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            display-name = "layer3";
             sensor-bindings = <&scroll_encoder>;
         };
 
