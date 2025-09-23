@@ -54,11 +54,11 @@
 
         layer0 {
             bindings = <
-&kp EQUAL        &kp N1      &kp N2                    &kp N3      &kp N4       &kp N5                        &kp UP_ARROW     &mt RIGHT_ALT KP_NUMBER_6  &mt RIGHT_COMMAND KP_N7  &mt RS(RIGHT_COMMAND) KP_N8  &kp N9                   &kp N0      &kp MINUS
-&kp CAPSLOCK     &kp Q       &kp W                     &kp E       &kp R        &kp T                         &kp DOWN_ARROW   &kp Y                      &kp U                    &kp I                        &kp O                    &kp P       &kp BSLH
-&kp AT_SIGN      &kp A       &kp S                     &kp D       &kp F        &kp G                         &kp LEFT_ARROW   &kp H                      &kp J                    &kp K                        &kp L                    &kp SEMI    &kp APOS
-&kp LS(LC(TAB))  &kp Z       &kp X                     &kp C       &kp V        &kp B                         &kp RIGHT_ARROW  &kp N                      &kp M                    &kp COMMA                    &kp DOT                  &kp FSLH    &lt 3 LC(TAB)
-&kp C_MUTE       &kp ESCAPE  &mt LEFT_SHIFT AMPERSAND  &lt 1 HASH  &lt 2 SPACE  &mt LEFT_CONTROL BACKSPACE    &kp C_MUTE       &mt RIGHT_CONTROL TAB      &kp ENTER                &lt 1 PERCENT                &mt RIGHT_SHIFT PAGE_UP  &kp DELETE
+&kp EQUAL        &kp N1                   &kp N2                    &mt LS(LEFT_COMMAND) N3  &mt LEFT_COMMAND KP_NUMBER_4  &mt LEFT_ALT KP_NUMBER_5      &kp UP_ARROW     &mt RIGHT_ALT KP_NUMBER_6    &mt RIGHT_COMMAND KP_N7  &mt RS(RIGHT_COMMAND) KP_N8  &kp N9                   &kp N0                    &kp MINUS
+&kp CAPSLOCK     &kp Q                    &kp W                     &kp E                    &mt LS(LEFT_CONTROL) R        &mt LA(LEFT_CONTROL) T        &kp DOWN_ARROW   &mt RC(RIGHT_ALT) Y          &mt RS(RIGHT_CONTROL) U  &kp I                        &kp O                    &kp P                     &kp BSLH
+&kp AT_SIGN      &kp A                    &kp S                     &kp D                    &kp F                         &mt LS(LA(LEFT_CONTROL)) G    &kp LEFT_ARROW   &mt RA(RS(RIGHT_CONTROL)) H  &kp J                    &kp K                        &kp L                    &kp SEMI                  &kp APOS
+&kp LS(LC(TAB))  &kp Z                    &kp X                     &kp C                    &kp V                         &kp B                         &kp RIGHT_ARROW  &kp N                        &kp M                    &kp COMMA                    &kp DOT                  &kp FSLH                  &lt 3 LC(TAB)
+&kp C_MUTE       &mt LEFT_COMMAND ESCAPE  &mt LEFT_SHIFT AMPERSAND  &lt 1 HASH               &lt 2 SPACE                   &mt LEFT_CONTROL BACKSPACE    &kp C_MUTE       &mt RIGHT_CONTROL TAB        &mt RIGHT_COMMAND ENTER  &lt 1 PERCENT                &mt RIGHT_SHIFT PAGE_UP  &mt RIGHT_COMMAND DELETE
             >;
 
             display-name = "LAYER0";
