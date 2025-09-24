@@ -54,17 +54,17 @@ layers:
   - {t: /, s: '?'}
   - {t: 'Ctl+$$mdi:keyboard-tab$$', h: layer4}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '&', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '#', h: layer1}
-  - {t: '$$mdi:keyboard-space$$', h: layer2}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '#', h: layer2}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', h: 'Ctl+$$mdi:apple-keyboard-command$$'}
   - {t: '%', h: layer1}
   - {t: PgUp, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
   layer1:
   - {t: Alt+`, s: Alt+~}
   - F1
@@ -121,13 +121,13 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   layer2:
@@ -186,8 +186,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&'
   - <
-  - '>'
-  - {type: held}
+  - {t: '>', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
