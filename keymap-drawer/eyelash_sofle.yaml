@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: 'Ctl+$$mdi:keyboard-tab$$', h: layer3}
+  - {t: 'Ctl+$$mdi:keyboard-tab$$', h: layer4}
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '&', h: '$$mdi:apple-keyboard-shift$$'}
@@ -247,7 +247,7 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&soft_off'
   - $$mdi:progress-download$$
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -303,6 +303,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&clear_all_text'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -311,8 +312,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
