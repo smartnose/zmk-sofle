@@ -114,11 +114,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &clear_all_text  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans           &trans  &trans    &kp LC(LA(LG(UP_ARROW)))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans           &trans  &trans    &kp LC(LA(LG(DOWN)))        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans           &trans  &trans    &kp LC(LA(LG(LEFT_ARROW)))  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &clear_all_text  &trans  &trans    &kp LC(LG(LA(RIGHT)))       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans           &trans  &trans    &trans                      &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer4";
